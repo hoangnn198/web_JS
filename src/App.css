@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  background-color: aquamarine;
+  /* height: 1500px; */
+  width: 100%;
+  /* margin: 0 auto ; */
+}
+.Header {
+  /* height: 200px; */
+  background-color: coral;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+  
+}
+
+.Nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* link điều hướng */
+.Nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Thay đổi màu liên kết khi di chuột qua */
+.Nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.Slide {
+  background-color: cornflowerblue;
+  height: 500px;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content{
+  height:1000px;
+  width: 1200px;
+  background-color: darkcyan;
+  margin: 0 auto;
+}
+
+.Footer{
+  background-color: darkgoldenrod;
+  padding: 10px;
+}
