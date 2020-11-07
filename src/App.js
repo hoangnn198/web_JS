@@ -3,6 +3,7 @@ import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom";
 
+
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -12,31 +13,26 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* header nhen */}
-        <header className="Header">
-          <h1>Đây là Header</h1>
-        </header>
+        <div class="card">
+          <div class="card-header">
+            Header
+          </div>
 
-        {/* thanh điều hướng */}
-        <nav className="Nav">
-          <a href="#">Trang chủ</a>
-          <a href="#">Giới thiệu</a>
-          <a href="#">Sản phẩm</a>
-          <a href="#">Liên hệ</a>
-        </nav>
+          {/* body  */}
+          <div class="card-body">
+            <div className="Slide">
 
-        {/* Slide ảnh */}
-        <div className="Slide">
-          <h1>Đây là slide ảnh</h1>
+            </div>
+            <h4 class="card-title">Title</h4>
+            
+            <p class="card-text">Text</p>
+          </div>
+
+          {/* footer */}
+          <div class="card-footer text-muted">
+            Footer
+          </div>
         </div>
-
-
-        <div className="Content">
-
-        </div>
-
-        <footer className="Footer">
-          <h1>Đây là footer</h1>
-        </footer>
 
 
       </div>
