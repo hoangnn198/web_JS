@@ -1,11 +1,12 @@
 .header {
   /* background-color: violet; */
-  height: 1000px;
+  max-height: 60%;
+  /* min-height: 700px; */
 }
 
 .nav{
-  background-color: thistle;
-  height: 100px;
+  /* background-color: thistle; */
+  height: 150px;
   margin-top: 20px;
   width: 100%;
   position: absolute;
@@ -18,17 +19,17 @@
 .silde {
   width: 100%;
   height: 100%;
-  background-color: teal;
+  /* background-color: teal; */
 }
 
 .card-body{
-  background-color: turquoise;
+  /* background-color: turquoise; */
   width: 90%;
   margin: 0 auto;
 }
 
 .main-content{
-  background-color: violet;
+  /* background-color: violet; */
   /* height: 1000px; */
   width: 70%;
   padding: 10px;
@@ -43,7 +44,7 @@
   margin-top: 10px;
 }
 .card-item{
-  background-color: seashell;
+  /* background-color: seashell; */
   height: 350px;
 }
 
@@ -67,7 +68,7 @@
   }
   .nav-item active{
     padding: 0 20px;
-    background-color: sienna;
+    /* background-color: sienna; */
   }
   .nav-link{
     font-size: 20px;
@@ -76,8 +77,8 @@
   }
 @media screen and (max-width: 600px) {
   .nav{
-    background-color: thistle;
-    height: 20%;
+    /* background-color: thistle; */
+    max-height: 20%;
     margin-top: 10px;
     width: 100%;
     position: relative;
@@ -94,7 +95,7 @@
     margin-left: 0;
   }
   .header {
-    background-color: violet;
+    /* background-color: violet; */
     height: 300px
   }
   .silde {
@@ -102,13 +103,13 @@
   }
 
   .card-body{
-    background-color: turquoise;
+    /* background-color: turquoise; */
     width: 100%;
     /* margin: 0 auto; */
   }
 
   .main-content{
-    background-color: violet;
+    /* background-color: violet; */
     height: 100%;
     width: 100%;
     padding: 10px 10px;
@@ -119,12 +120,12 @@
     width: 100%;
   }
   .item{
-    background-color: silver;
+    /* background-color: silver; */
     width: 100%;
     
   }
   .card-item{
-    background-color: seashell;
+    /* background-color: seashell; */
     height: 400px;
     margin-top: 10px;
   }

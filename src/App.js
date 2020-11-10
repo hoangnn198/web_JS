@@ -18,7 +18,7 @@ class App extends React.Component {
           {/* nav  */}
           <div class="nav">
             <div
-              style={{ height: "100%", width: "30%" }}
+              style={{ height: "100%", width: "25%" }}
             >
               <img
                 class="card-img-top"
@@ -29,7 +29,7 @@ class App extends React.Component {
               />
             </div>
             <div
-              style={{  height: "50%", width: "70%" }}
+              style={{ height: "50%", width: "70%" }}
               id="right-nav"
             >
               <nav
@@ -102,44 +102,44 @@ class App extends React.Component {
 
           {/* slide  */}
           <div class="silde">
-          <div id="carouselId" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselId" data-slide-to="1"></li>
-            <li data-target="#carouselId" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img src={backgr1} alt="First slide" width="100%" />
-            </div>
+            <div id="carouselId" class="carousel slide" data-ride="carousel" height="100%">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox" height="100%">
+                <div class="carousel-item active">
+                  <img src={backgr1} alt="First slide" width="100%" />
+                </div>
 
-            <div class="carousel-item">
-              <img src={backgr1} alt="First slide" width="100%" />
-            </div>
+                <div class="carousel-item">
+                  <img src={backgr1} alt="First slide" width="100%" />
+                </div>
 
-            <div class="carousel-item">
-              <img src={backgr1} alt="First slide" width="100%" />
+                <div class="carousel-item">
+                  <img src={backgr1} alt="First slide" width="100%" />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselId"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselId"
+                role="button"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselId"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselId"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
 
           </div>
         </div>
