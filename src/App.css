@@ -1,8 +1,105 @@
-.card-header{
-  padding: 20px;
+#carouselExampleIndicators {
+  /* padding: 10px; */
+  background-color: aquamarine;
+  height: 98vh;
+  width: 100%;
+
 }
 
-#collapsibleNavId{
- background-color: aqua; 
- width: 500px;
+
+
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+#img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.navbar {
+  /* background-color: green; */
+  /* height: 80px; */
+  padding: 10px;
+  width: 100%;
+
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-link {
+  color: honeydew;
+}
+
+.container {
+  padding: 10px;
+}
+
+.left-content {
+  /* height: 1000px; */
+  padding: 10px;
+  width: 75%;
+}
+
+.card {
+  /* background-color: indigo;     */
+  height: 350px;
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+      /* padding: 10px; */
+      width: 100%;
+      position: relative;
+  }
+
+  #carouselExampleIndicators {
+      /* padding: 10px; */
+      background-color: aquamarine;
+      height: 30vh;
+  }
+
+  .carousel-inner {
+      height: 100%;
+      background-color: blue;
+  }
+
+  .carousel-item {
+      height: 100%;
+      background-color: green;
+  }
+
+  #img {
+      height: 100%;
+
+  }
+
+
+
+
+  .card {
+      /* background-color: indigo; */
+      height: 450px;
+      margin-top: 10px;
+  }
+
+  .card-img-top {
+      height: 350px;
+  }
+
+
 }

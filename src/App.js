@@ -1,56 +1,178 @@
 import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import Navbar from './custom/Navbar'
 import Slider from "./custom/Slider";
-import backgr1 from "./image/backgr1.jpg";
 import logo from "./image/logo.png";
 import img1 from "./image/img1.jpg";
-import img2 from "./image/img2.jpg";
-import ic_menu from "./image/ic_menu.png";
-import ic_cart from "./image/ic_cart.png";
-import ic_search from "./image/ic_search.png";
+import Item from "./custom/Item";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: [
+        {
+          id: 1,
+          img: { img1 },
+          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
+          price: "2.490.00 đ"
+        },
+        {
+          id: 2,
+          img: { img1 },
+          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
+          price: "2.490.00 đ"
+        },
+        {
+          id: 3,
+          img: { img1 },
+          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
+          price: "2.490.00 đ"
+        },
+        {
+          id: 4,
+          img: { img1 },
+          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
+          price: "2.490.00 đ"
+        },
+      ]
+    }
+  }
   render() {
     return (
-      <div class="card">
-        <div class="card-header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <h4 style={{ color: 'red' }}>Cửa Gỗ Việt</h4>
-            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <img src={ic_menu} />
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#">Action 1</a>
-                    <a class="dropdown-item" href="#">Action 2</a>
-                  </div>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+      <div>
+
+        <Navbar />
+        <Slider />
+
+        <div class="container">
+          <h3>SẢN PHẨM</h3>
+          <div class="row" style={{ marginTop: "10px" }} >
+
+            <Item />
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
             </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style={{ marginTop: "10px" }}>
+            <div class="col-sm-3">
+              <div class="card">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ăn Gỗ Cao Su</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style={{ marginTop: "10px" }}>
+            <div class="col-sm-3">
+              <div class="card">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ăn Gỗ Cao Su</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <img class="card-img-top" src={img1} alt="" />
+                <div class="card-body">
+                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
+                  <p class="card-text">2.490.000 đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <nav aria-label="Page navigation example" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: "20px" }}>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
           </nav>
         </div>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-        <div class="card-footer text-muted">
-          Footer
-        </div>
+        <footer>
+          <p>Footer</p>
+        </footer>
       </div>
     );
   }
@@ -125,7 +247,7 @@ export default App;
           </div>
           <img src={ic_search} id="imgSearch" height = "40px" width = "40px" />
         </nav>
-
+ 
         <div id="carouselId" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselId" data-slide-to="0" class="active"></li>
@@ -136,11 +258,11 @@ export default App;
             <div class="carousel-item active">
               <img src={backgr1} alt="First slide" width="100%" />
             </div>
-
+ 
             <div class="carousel-item">
               <img src={backgr1} alt="First slide" width="100%" />
             </div>
-
+ 
             <div class="carousel-item">
               <img src={backgr1} alt="First slide" width="100%" />
             </div>
@@ -164,11 +286,11 @@ export default App;
             <span class="sr-only">Next</span>
           </a>
         </div>
-
+ 
         <div class="card-body">
           
           <h5 style={{ marginTop: "10px" }}>TOP SẢN PHẨM BÁN CHẠY</h5>
-
+ 
           <div className="row">
             <div class="card" class="col-sm-6" class="col-md-3">
               <img class="card-img-top" src={img1} alt="" />
@@ -199,9 +321,9 @@ export default App;
               </div>
             </div>
           </div>
-
+ 
           <h5 style={{ marginTop: "10px" }}>SẢN PHẨM MỚI </h5>
-
+ 
           <div className="row">
             <div class="card" class="col-sm-6" class="col-md-3">
               <img class="card-img-top" src={img1} alt="" />
@@ -232,8 +354,8 @@ export default App;
               </div>
             </div>
           </div>
-
-
+ 
+ 
         </div>
         <div class="card-footer text-muted"> Footer </div>
       </div> */
