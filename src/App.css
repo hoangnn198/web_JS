@@ -53,7 +53,7 @@
 
 .card {
   /* background-color: indigo;     */
-  height: 350px;
+  height: 400px;
 }
 
 .card-img-top {
@@ -93,7 +93,7 @@
 
   .card {
       /* background-color: indigo; */
-      height: 450px;
+      height: 500px;
       margin-top: 10px;
   }
 

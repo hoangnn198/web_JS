@@ -6,6 +6,13 @@ import Slider from "./custom/Slider";
 import logo from "./image/logo.png";
 import img1 from "./image/img1.jpg";
 import Item from "./custom/Item";
+import { Alert } from "bootstrap";
+
+// function Items() {
+//   return (
+
+//     )
+// }
 
 class App extends React.Component {
   constructor(props) {
@@ -39,6 +46,11 @@ class App extends React.Component {
       ]
     }
   }
+  onPress() {
+    alert("AAAAAAAAAAAAAA")
+  }
+
+
   render() {
     return (
       <div>
@@ -51,112 +63,14 @@ class App extends React.Component {
           <div class="row" style={{ marginTop: "10px" }} >
 
             <Item />
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
+            <Item />
+            <Item />
+
           </div>
 
-          <div class="row" style={{ marginTop: "10px" }}>
-            <div class="col-sm-3">
-              <div class="card">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ăn Gỗ Cao Su</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="row" style={{ marginTop: "10px" }}>
-            <div class="col-sm-3">
-              <div class="card">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ăn Gỗ Cao Su</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card text-left">
-                <img class="card-img-top" src={img1} alt="" />
-                <div class="card-body">
-                  <h6 class="card-title">Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN</h6>
-                  <p class="card-text">2.490.000 đ</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
 
         </div>
         <div>
