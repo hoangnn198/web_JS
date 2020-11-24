@@ -1,12 +1,5 @@
 import "./App.css";
 import React from "react";
-import ReactDOM from "react-dom";
-import Navbar from './custom/Navbar'
-import Slider from "./custom/Slider";
-import logo from "./image/logo.png";
-import img1 from "./image/img1.jpg";
-import Item from "./custom/Item";
-import { Alert } from "bootstrap";
 
 // function Items() {
 //   return (
@@ -17,77 +10,90 @@ import { Alert } from "bootstrap";
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      data: [
-        {
-          id: 1,
-          img: { img1 },
-          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
-          price: "2.490.00 đ"
-        },
-        {
-          id: 2,
-          img: { img1 },
-          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
-          price: "2.490.00 đ"
-        },
-        {
-          id: 3,
-          img: { img1 },
-          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
-          price: "2.490.00 đ"
-        },
-        {
-          id: 4,
-          img: { img1 },
-          title: "Bộ Bàn Ghế Ăn 4 Ghế Hoàng Kim MGN",
-          price: "2.490.00 đ"
-        },
-      ]
-    }
   }
-  onPress() {
-    alert("AAAAAAAAAAAAAA")
-  }
-
 
   render() {
     return (
-      <div>
+      <div >
+        {/* Thanh search */}
+        <div className="tagSearch col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h6>Thanh search</h6>
+        </div >
 
-        <Navbar />
-        <Slider />
+        {/* Containers  */}
+        <div className="containers col-sm-12 col-md-12 col-lg-10 col-xl-10">
 
-        <div class="container">
-          <h3>SẢN PHẨM</h3>
-          <div class="row" style={{ marginTop: "10px" }} >
+          {/* Logo  */}
+          <div className="logo col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6>Logo</h6>
+          </div >
 
-            <Item />
-            <Item />
-            <Item />
-
-          </div>
-
-
+          {/* Top Navbar  */}
+          <div className="topNav col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6> Top Navbar </h6>
+          </div >
 
 
+          {/* Slider  */}
+          <div className="slider col-sm-12 col-md-12 col-lg-12 col-xl-12" id="sliders">
 
-        </div>
-        <div>
-          <nav aria-label="Page navigation example" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: "20px" }}>
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
-        </div>
-        <footer>
-          <p>Footer</p>
-        </footer>
-      </div>
+            {/* Left Slider  */}
+            <div className="leftSlider col-sm-3 col-md-3 col-lg-3 col-xl-3">
+              <h6> Danh mục sản phẩm </h6>
+            </div >
+
+            {/* Right Slider  */}
+            <div className="rightSlider col-sm-9 col-md-9 col-lg-9 col-xl-9">
+              <h6> Slider </h6>
+            </div >
+
+          </div >
+
+
+          {/* Quảng cáo  */}
+          <div className="marketing col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6>Quảng cáo  </h6>
+          </div >
+
+
+          {/* Title  */}
+          <div className="titleProduct col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6> Title Product </h6>
+          </div >
+
+          {/*  Sản phẩm */}
+          <div className="product col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6> Product </h6>
+          </div >
+
+          {/* Quảng cáo  */}
+          <div className="marketing col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6>Quảng cáo  </h6>
+          </div >
+
+          {/* Sản phẩm 1 */}
+          <div className="product1 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6> Sản phẩm 1 </h6>
+          </div >
+
+          {/* Sản phẩm 2 */}
+          <div className="product2 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6> Sản phẩm 2 </h6>
+          </div >
+
+          {/* Đối tác */}
+          <div className="partner col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h6> Đối tác </h6>
+          </div >
+
+
+        </div >
+
+        {/* Footer  */}
+        <div className="footer col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h6>Footer</h6>
+        </div >
+      </div >
     );
   }
 }

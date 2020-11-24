@@ -1,105 +1,159 @@
-#carouselExampleIndicators {
-  /* padding: 10px; */
+.tagSearch{
+  background-color: blueviolet;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containers{
+  display: 'flex';
   background-color: aquamarine;
-  height: 98vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo{
+  display: flex;
+  background-color:darkseagreen ;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+}
+.topNav{
+  display: flex;
+  background-color:tomato ;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  display: flex;
+  background-color:thistle ;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  padding: 0;
+}
+#sliders{
 
 }
 
-
-
-.carousel-inner {
-  height: 100%;
-  width: 100%;
-  background-color: blue;
+.leftSlider{
+  display: flex;
+  background-color:tan ;
+  height: 500px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
-
-.carousel-item {
-  height: 100%;
-  width: 100%;
-  background-color: green;
+.rightSlider{
+  display: flex;
+  background-color:teal ;
+  height: 500px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
-
-#img {
-  height: 100%;
-  width: 100%;
+.titleProduct{
+  display: flex;
+  background-color:tomato;
+  height: 50px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.marketing{
+  display: flex;
+  background-color:rgb(150, 135, 133);
+  height: 150px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 
 }
-
-.navbar {
-  /* background-color: green; */
-  /* height: 80px; */
-  padding: 10px;
-  width: 100%;
+.product{
+  display: flex;
+  background-color:rgb(84, 180, 132);
+  height: 600px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.product1{
+  display: flex;
+  background-color:rgb(84, 180, 132);
+  height: 350px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.product2{
+  display: flex;
+  background-color:rgb(76, 29, 114);
+  height: 350px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.partner{
+  display: flex;
+  background-color:rgb(149, 155, 64);
+  height: 150px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
 
   display: flex;
-  position: absolute;
-  z-index: 1;
-}
-
-.nav-link {
-  color: honeydew;
-}
-
-.container {
-  padding: 10px;
-}
-
-.left-content {
-  /* height: 1000px; */
-  padding: 10px;
-  width: 75%;
-}
-
-.card {
-  /* background-color: indigo;     */
-  height: 400px;
-}
-
-.card-img-top {
+  background-color:rgb(80, 80, 76);
   height: 250px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
-  .navbar {
-      /* padding: 10px; */
-      width: 100%;
-      position: relative;
+  .tagSearch{
+    background-color: blueviolet;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  #carouselExampleIndicators {
-      /* padding: 10px; */
-      background-color: aquamarine;
-      height: 30vh;
+  .logo{
+    display: flex;
+    background-color:darkseagreen ;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
   }
-
-  .carousel-inner {
-      height: 100%;
-      background-color: blue;
+  .slider{
+    display: flex;
+    flex-direction: column;
+    background-color:thistle ;
+    height: 260px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
   }
-
-  .carousel-item {
-      height: 100%;
-      background-color: green;
+  .leftSlider{
+    display: flex;
+    background-color:tan ;
+    height: 60px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
   }
-
-  #img {
-      height: 100%;
-
+  .rightSlider{
+    display: flex;
+    background-color:teal ;
+    height: 200px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
   }
-
-
-
-
-  .card {
-      /* background-color: indigo; */
-      height: 500px;
-      margin-top: 10px;
-  }
-
-  .card-img-top {
-      height: 350px;
-  }
-
-
+  
 }
