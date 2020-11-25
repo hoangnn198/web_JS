@@ -12,41 +12,60 @@
   padding: 0;
 }
 
-.logo{
-  display: flex;
-  background-color:darkseagreen ;
-  height: 140px;
-  justify-content: center;
-  align-items: center;
+.logoShop{
+  height: 180px;
+  width: 180px;
 }
-.topNav{
-  display: flex;
-  background-color:tomato ;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
+
+#bannerTop{
+  /* float: right; */
+  background-color: turquoise;
+  height: 150px;
+  width: 100%;
+
+}
+.bannerTop{
+  background-color: violet;
+  height: 100%;
+  width: 600px;
+  /* display: flex; */
+}
+.listProduct{
+  background-color: violet;
+  height: 100%;
+  width: 100%
+}
+.listProduct a:hover {
+  margin-left: 10px;
+}
+
+.nav-item{
+  /* background-color: goldenrod; */
+  padding: 0 15px;
+}
+/* Thay đổi màu liên kết khi di chuột qua */
+.collapse a:hover {
+  /* background-color: #db7093; */
+  color: gainsboro;
+  font-weight: bold;
 }
 
 .slider{
   display: flex;
   background-color:thistle ;
   height: 500px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   width: 100%;
   padding: 0;
 }
-#sliders{
 
-}
-
-.leftSlider{
+#leftSlider{
   display: flex;
   background-color:tan ;
   height: 500px;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  flex-direction: column;
 }
 .rightSlider{
   display: flex;
@@ -115,6 +134,8 @@
   align-items: center;
 }
 
+
+
 @media screen and (max-width: 600px) {
   .tagSearch{
     background-color: blueviolet;
@@ -123,23 +144,20 @@
     justify-content: center;
     align-items: center;
   }
-  .logo{
-    display: flex;
-    background-color:darkseagreen ;
+  .logoShop{
     height: 100px;
-    justify-content: center;
-    align-items: center;
+    width: 100px;
   }
   .slider{
     display: flex;
     flex-direction: column;
     background-color:thistle ;
-    height: 260px;
-    justify-content: flex-start;
+    /* height: 260px; */
+    /* justify-content: flex-start; */
     width: 100%;
     padding: 0;
   }
-  .leftSlider{
+  #leftSlider{
     display: flex;
     background-color:tan ;
     height: 60px;
@@ -154,6 +172,13 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+  }
+  .navbar{
+    /* float: left; */
+    padding-left:10;
+    padding-top: 0;
+    padding-bottom: 0;
+
   }
   
 }

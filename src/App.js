@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
-
+import Navbar from './components/custom/Navbar'
+import logo from './image/logo.png'
+import ListProduct from "./components/product/ListProduct";
 // function Items() {
 //   return (
 
@@ -23,24 +25,22 @@ class App extends React.Component {
         {/* Containers  */}
         <div className="containers col-sm-12 col-md-12 col-lg-10 col-xl-10">
 
-          {/* Logo  */}
-          <div className="logo col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <h6>Logo</h6>
-          </div >
-
-          {/* Top Navbar  */}
-          <div className="topNav col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <h6> Top Navbar </h6>
-          </div >
+          {/* Logo + Navbar */}
+          <Navbar />
 
 
           {/* Slider  */}
           <div className="slider col-sm-12 col-md-12 col-lg-12 col-xl-12" id="sliders">
 
             {/* Left Slider  */}
-            <div className="leftSlider col-sm-3 col-md-3 col-lg-3 col-xl-3">
-              <h6> Danh mục sản phẩm </h6>
-            </div >
+            <nav className="col-xl-3 navbar-expand-lg" id="leftSlider">
+
+              <ListProduct />
+            </nav >
+
+
+
+
 
             {/* Right Slider  */}
             <div className="rightSlider col-sm-9 col-md-9 col-lg-9 col-xl-9">

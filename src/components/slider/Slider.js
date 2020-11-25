@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import backgr1 from "../image/backgr1.jpg";
+import backgr1 from "../../image/backgr1.jpg";
 
 export default class componentName extends Component {
   render() {
